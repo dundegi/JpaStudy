@@ -1,0 +1,22 @@
+spring:
+#  datasource:
+#    url: jdbc:h2:tcp://localhost/~/JpaShop
+#    username: sa
+#    passwaord:
+#    driver-class-name: org.h2.Driver
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: create-drop
+#    properties:
+#      hibernate:
+#       show_sql: true
+#        format_sql: true
+
+# 스프링부트에서는 기본적으로 값이 없으면 메모리db로 테스트를 해준다. test에 yml 파일이 있으면 테스트시 우선적으로 탐색. 메인 yml파일을 무시한다.
+
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
