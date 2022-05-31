@@ -1,2 +1,12 @@
-package JpaBook.JpaShop.repository;public class OrderSearch {
+package JpaBook.JpaShop.repository;
+
+import JpaBook.JpaShop.domain.OrderStatus;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter @Setter
+public class OrderSearch {
+
+    private String memberName; //회원 이름
+    private OrderStatus orderStatus; //주문 상태(ORDER, CANCEL)
 }
